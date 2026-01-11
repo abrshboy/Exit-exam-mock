@@ -6,12 +6,24 @@
       "firebase.json",
       "**/.*",
       "**/node_modules/**",
-      "firestore.rules"
+      "firestore.rules",
+      ".firebaserc"
     ],
     "rewrites": [
       {
         "source": "**",
         "destination": "/index.html"
+      }
+    ],
+    "headers": [
+      {
+        "source": "**/*.@(js|jsx|ts|tsx)",
+        "headers": [
+          {
+            "key": "Content-Type",
+            "value": "application/javascript"
+          }
+        ]
       }
     ]
   },

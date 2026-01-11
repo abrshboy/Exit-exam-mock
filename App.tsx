@@ -1,8 +1,7 @@
-
 import React, { useState, useEffect } from 'react';
-import LoginPage from './pages/LoginPage';
-import Dashboard from './pages/Dashboard';
-import { auth } from './lib/firebase';
+import LoginPage from './pages/LoginPage.tsx';
+import Dashboard from './pages/Dashboard.tsx';
+import { auth } from './lib/firebase.ts';
 import { onAuthStateChanged, signOut } from 'firebase/auth';
 
 const App: React.FC = () => {

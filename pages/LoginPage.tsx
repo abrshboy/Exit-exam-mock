@@ -1,7 +1,6 @@
-
 import React, { useState } from 'react';
-import Input from '../components/Input';
-import { auth, googleProvider } from '../lib/firebase';
+import Input from '../components/Input.tsx';
+import { auth, googleProvider } from '../lib/firebase.ts';
 import { 
   signInWithEmailAndPassword, 
   createUserWithEmailAndPassword, 

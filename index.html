@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -43,11 +42,7 @@
 </head>
 <body class="min-h-screen">
     <div id="root"></div>
-    
-    <!-- 
-      We use type="text/babel" and data-type="module" so Babel 
-      transpiles the TSX while maintaining ESM support.
-    -->
+    <!-- Babel will process this and all imported .tsx files -->
     <script type="text/babel" data-type="module" src="index.tsx"></script>
 </body>
 </html>
